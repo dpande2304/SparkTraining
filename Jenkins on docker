@@ -1,0 +1,11 @@
+jenkins in docker
+1. open docker
+2. open Bash lower right in docker
+3. run command: docker run -d -p 8080:8080 -p 50000:50000 --name jenkins jenkins/jenkins:lts
+4. go to -> http://localhost:8080/manage/ to access Jenkins board
+5. for first time setup a screen will open asking for password
+      -> Go to container running jenkins/jenkins 
+      -> In the logs you will get password below this line "Jenkins initial setup is required. An admin user has been created and a password generated.
+         Please use the following password to proceed to installation:" .
+      -> Put this password and continue as admin else you can create a new user and password.
+      -> Else the pasword can be changed later by going on Dashboard in jenkins-> profile->security -> change password
